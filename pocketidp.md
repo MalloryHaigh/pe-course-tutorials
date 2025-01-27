@@ -2,19 +2,21 @@
 
 We're going to look at an example of an IDP powered by a Platform Orchestrator in this tutorial. For fun, we like to call this the `5 Minute IDP` or `Pocket IDP`. 
 
+This type of IDP separates the "buckets" of Developer and Operations/Infrastructure teams; the idea is that the Developer experience is abstracted *away* from configs and infrastructure short of declaring dependencies. The purpose of a Platform Orchestrator is to connect the Developer's application source code to the Platform source code laid out by Platform/infra teams.
+
 You'll be invited to an instance of [Coder](https://coder.com) at the end of this week's lecture. Please let us know if you're unable to access it by emailing us. Using the Coder setup, we'll scaffold an IDP with the Humanitec Platform Orchestrator at the centre, and set up a local environment to test in.
 
-### Prerequisties
+### Prerequisites
 * A Coder account for the PE Course instance
 * [Coder CLI](https://coder.com/docs/install/cli) installed
 * A [Humanitec Free Trial account](https://humanitec.com/free-trial)
-* A Humanitec [Service User and API Token](https://developer.humanitec.com/platform-orchestrator/security/service-users/)
+* A Humanitec [Service User and API Token](https://developer.humanitec.com/platform-orchestrator/security/service-users/) with Administrator permissions
 * [Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/) installed
 
 ### Getting Started
 Inside of Coder, you'll see tabs for `Workspaces` or `Templates`. Navigate to the `Templates` tab and select the `pe-course-pidp` template.
 
-Fill out the form with your required details; make sure to use the Humanitec Org ID from the free trial account you created earlier (from `https://app.humanitec.io/orgs/ORG-ID/resources/definitions`), as well as the Service User API token from the prerequisites. 
+Fill out the form with your required details; make sure to use the Humanitec Org ID from the free trial account you created earlier (from `https://app.humanitec.io/orgs/<YOUR-ORG-ID>/resources/definitions`), as well as the Service User API token from the prerequisites. 
 
 ***We recommend you select the region nearest you, and the middle or largest available instance type.***
 
@@ -206,4 +208,6 @@ The Developer experience is that simple!
 ## Experiment Further: Next Steps 🚀
 
 This tutorial is just a taste of what a powerful IDP using vendor-based services and a Platform Orchestrator can look like.
+
+If you want to go beyond the Pocket IDP, you can find a lot of useful advanced use cases [here](https://developer.humanitec.com/training/master-your-internal-developer-platform/introduction/).
 
