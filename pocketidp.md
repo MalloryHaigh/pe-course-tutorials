@@ -56,7 +56,7 @@ Once this is completed, go into [Humanitec’s UI](https://app.humanitec.io), vi
 
 You’ll only need guest access to continue from here; click the button in Backstage to login. Click “Create”, and create a new service from one of the two available templates. **Note the name of your application!**
 
-You’ll be able to view the repository of this created app, see it in Backstage, and it also now will show up in the Humanitec UI. Wait for it to finish deploying before accessing the app via the URL in the Humanitec UI — just like before, make sure to add `:8443` to the end of the URL to access (ex: `https://your-app.localhost:8443`).
+You’ll be able to view the repository of this created app, see it in Backstage, and it also now will show up in the Humanitec UI. Wait for it to finish deploying before accessing the app via the URL in the Humanitec UI which will be the app name you selected in Backstage plus a random string of letters — just like before, make sure to add `:8443` to the end of the URL to access (ex: `https://your-app-abcd.localhost:8443`).
 
 
 ## PE Golden Path: Add a New Database Resource
