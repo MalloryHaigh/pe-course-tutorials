@@ -76,8 +76,8 @@ Data:
   USER_PASSWORD : <password>
 ```
 
-## Step 1: Scaffolding with Backstage
-The first thing we'll do is scaffold an application using Backstage. Visit the [local Backstage instance](https://cnoe.localtest.me:8443/) to get started and login with `user1` and the password from the `USER_PASSWORD` variable in the secrets output above.
+## Step 1: Simple Deployment with Backstage
+The first thing we'll do is scaffold an application via a simple deployment using Backstage. Visit the [local Backstage instance](https://cnoe.localtest.me:8443/) to get started and login with `user1` and the password from the `USER_PASSWORD` variable in the secrets output above.
 
 On the left-hand menu, hit `Create`. Select the `Create a Basic Deployment` option from the available pre-configured services. Name your service, and create it!
 
@@ -86,3 +86,14 @@ You'll want to take a look at the scaffolded application inside [Gitea](https://
 Once this service is deployed, you also should take a look at it inside of [Argo CD](https://cnoe.localtest.me:8443/argocd) by using the credentials under `argocd-initial-admin-secret` in the secrets output.
 
 ## Step 2: Adding a New Resource
+Now, we'll do something a little bit more complex; we'll now deploy a new application with associated cloud resources. In this case, we're going to deploy an S3 bucket.
+
+Make sure that Crossplane is installed into your CNOE IDP by following [these instructions](https://github.com/cnoe-io/stacks/blob/main/crossplane-integrations/README.md). Once that's been confirmed, select `Add a Go App with AWS Resources` in the `Create` menu on Backstage.
+
+Follow the walk-through to deploy the new application; note that an actual AWS S3 resource will _not_ be deployed as the actual credentials to an AWS account are missing. If you would like to try this out, you'll need to [update the credentials file](https://cnoe.io/docs/reference-implementation/integrations/reference-impl#:~:text=the%20credentials%20secret%20file) accordingly.
+
+View this app in Backstage to understand what pieces were scaffolded with the application. 
+
+### Using Crossplane to Manage Infrastructure
+TO DO, using:
+https://cnoe.io/docs/reference-implementation/configs/control-plane
