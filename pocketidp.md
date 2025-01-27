@@ -106,9 +106,9 @@ If you didn’t login to humctl earlier, do so now with `humctl login`
 Next, we’ll use Terraform inside this folder to generate the resource definitions:
 
 ```
-Terraform init
-Terraform plan
-Terraform apply
+terraform init
+terraform plan
+terraform apply
 ```
 
 
