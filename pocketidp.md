@@ -38,7 +38,7 @@ Next, you'll want to set up port forwarding to be able to access the various com
 coder port-forward <CODER-WORKSPACE-NAME> --tcp 8443:443
 ```
 
-Now, we can get ready to access the Coder instance itself. Start by running the following:
+Now, we can get ready to access the Coder instance itself. Start by running the following in a *new terminal window*:
 ```
 coder config-ssh
 ```
