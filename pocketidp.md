@@ -27,7 +27,12 @@ The Coder workspace will do a few things; it will create a Virtual Machine and i
 
 Once the Coder workspace is ready, you'll need to do a few things in order to access it. 
 
-First, you'll want to set up port forwarding to be able to access the various components of the Coder setup through your browser. Do this in your terminal by running the following command and swapping in the name of your coder instance at `<CODER-WORKSPACE-NAME>`:
+First, login to the PlatformEngineering.org Coder environment:
+```
+coder login https://sandbox.platformengineering.org/
+```
+
+Next, you'll want to set up port forwarding to be able to access the various components of the Coder setup through your browser. Do this in your terminal by running the following command and swapping in the name of your coder instance at `<CODER-WORKSPACE-NAME>`:
 
 ```
 coder port-forward <CODER-WORKSPACE-NAME> --tcp 8443:443
