@@ -1,4 +1,4 @@
-# Hands-On Platform Engineering Demos
+# Hands-On Platform Engineering Labs
 Ever wanted to give Internal Developer Platforms (IDPs) a try, but not sure where to start?
 
 This repository contains **two** different IDPs that you can setup yourself and take for a test drive as part of the [Platform Engineering Fundamentals](https://platformengineering.org/fundamentals) course via pre-built [Coder](https://coder.com) templates provided by the [PE.org](https://platformengineering.org) education team.
