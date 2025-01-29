@@ -94,6 +94,10 @@ Follow the walk-through to deploy the new application; note that an actual AWS S
 
 View this app in Backstage to understand what pieces were scaffolded with the application. 
 
-### Using Crossplane to Manage Infrastructure
-TO DO, using:
-https://cnoe.io/docs/reference-implementation/configs/control-plane
+### Going Beyond the Basics
+There are a lot of other things you can do with CNOE, as its fairly extensible. Note, however, that there is less separation between the developer and operations experience; keep in this in mind as you explore it!
+
+Some other key components to check out:
+* [Plugins](https://cnoe.io/docs/category/plugins)
+* [CNOE CLI](https://cnoe.io/docs/reference-implementation/integrations/generated)
+* [More about CNOE](https://cnoe.io/blog/welcome)
