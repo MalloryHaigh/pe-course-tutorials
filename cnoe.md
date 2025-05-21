@@ -23,11 +23,18 @@ Hit `Create Workspace` when you're ready, and wait until the instance is complet
 The Coder workspace will do a few things; it will create a Virtual Machine and inside of it spin up a Kind cluster, a Gitea instance, as well as prepare Backstage and other pre-built configurations. 
 
 Once the Coder workspace is ready, you'll need to do a few things in order to access it. 
+
+First, make sure you are logged in to the Coder CLI and PE.org environment by entering this command in your terminal and following the prompts. You'll use the login and password given to you by the PE.org University team!
+```
+coder login sandbox.platformengineering.org
+```
+
+Next, port forward into the Coder workspace you created, replacing the `<CODER-WORKSPACE-NAME>` with the name of the workspace you created earlier.
 ```
 coder port-forward <CODER-WORKSPACE-NAME> --tcp 8443:443
 ```
 
-Now, we can get ready to access the Coder instance itself. Start by running the following:
+Now, we can get ready to access the Coder instance itself. Start by running the following in a new terminal window:
 ```
 coder config-ssh
 ```
