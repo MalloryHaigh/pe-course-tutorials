@@ -31,7 +31,7 @@ coder login sandbox.platformengineering.org
 
 Next, port forward into the Coder workspace you created, replacing the `<CODER-WORKSPACE-NAME>` with the name of the workspace you created earlier.
 ```
-coder port-forward <CODER-WORKSPACE-NAME> --tcp 8443:443
+coder port-forward <CODER-WORKSPACE-NAME> --tcp 8443:8443
 ```
 
 Now, we can get ready to access the Coder instance itself. Start by running the following in a new terminal window:
