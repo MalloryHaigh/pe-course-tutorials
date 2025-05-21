@@ -9,21 +9,21 @@ You'll be invited to an instance of [Coder](https://coder.com) at the end of thi
 ### Prerequisites
 * A Coder account for the PE Course instance
 * [Coder CLI](https://coder.com/docs/install/cli) installed
-* A [Humanitec Free Trial account](https://humanitec.com/free-trial)
-* A Humanitec [Service User and API Token](https://developer.humanitec.com/platform-orchestrator/security/service-users/) with Administrator permissions
 * [Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/) installed
 
 ### Getting Started
 Inside of Coder, you'll see tabs for `Workspaces` or `Templates`. Navigate to the `Templates` tab and select the `pe-course-pidp` template.
 
-Fill out the form with your required details; make sure to use the Humanitec Org ID from the free trial account you created earlier (from `https://app.humanitec.io/orgs/<YOUR-ORG-ID>/resources/definitions`), as well as the Service User API token from the prerequisites. 
+Fill out the form with your required details.
 
 ***We recommend you select the region nearest you, and the middle or largest available instance type.***
 
 Hit `Create Workspace` when you're ready, and wait until the instance is completed. *This can take 10+ minutes; please be patient!*
 
 ### Setup
-The Coder workspace will do a few things; it will create a Virtual Machine and inside of it spin up a Kind cluster, a Gitea instance, as well as prepare Backstage and other pre-built configurations. Additionally, it will create environment types, resource definitions, and applications in your Humanitec account.
+The Coder workspace will do a few things; it will create a Virtual Machine and inside of it spin up a Kind cluster, a Gitea instance, as well as prepare Backstage and other pre-built configurations. Additionally, it will create environment types, resource definitions, and applications in a Humanitec free trial account.
+
+****You will receive an email invite to a Humanitec free trial org; make sure to accept this, and either follow the registration or login prompts. After this, make sure to install the [Humanitec CLI](https://developer.humanitec.com/platform-orchestrator/cli/).****
 
 Once the Coder workspace is ready, you'll need to do a few things in order to access it. 
 
